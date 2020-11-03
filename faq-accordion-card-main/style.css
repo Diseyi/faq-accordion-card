@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.desktop-image {
+  display: none;
+}
+
+body {
+  background: -webkit-linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+font-family: 'Kumbh Sans', sans-serif;
+  font-size: 0.8em;
+}
+
+.faq-container {
+  background-color: #fff;
+  border-radius: 1.4rem;
+  margin: 40% auto 17%;
+  padding: 1.3rem;
+  width: 85%;
+}
+
+.mobile-image {
+  position: relative;
+  top: -8rem;
+  left: -.8rem;
+}
+
+.mobile-pattern {
+  position: absolute;
+  top: 6.6rem;
+  right: .3rem;
+}
+
+.faq-text-container {
+  margin-top: -6.5rem;
+}
+
+h1 {
+  color: hsl(238, 29%, 16%);
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 1rem;
+}
+
+.h2-box {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  outline: none;
+  padding: .2rem 0;
+}
+
+.h2 {
+  color: hsl(237, 12%, 33%);
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+details>summary {
+  list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after {
+  content: url(images/icon-arrow-down.svg);
+}
+
+details[open] summary:after {
+  content: /*url(images/icon-arrow-down.svg)*/ "+";
+  transform : rotate(180degree);
+}
+
+.faq-box {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding: 1rem .2rem;
+}
+
+p {
+  color: hsl(240, 6%, 50%);
+  font-size: .76rem;
+  line-height: 1.1rem;
+  padding-top: .5rem;
+}
+
+.arrow {
+  align-self: center;
+  width: .7rem;
+  height: .5rem; 
+  display: none;
+}
+
+.attribution {
+  color: #fff;
+  text-align: center;
+  padding-bottom: .5rem;
+}
+
+.attribution a {
+  color: #fff;
+}
+
+
+
+@media screen and (min-width: 960px) {
+  .mobile-image {
+    display: none;
+  }
+
+  .faq-container {
+    border: 1px solid;
+   display: none;
+    margin: 10% auto;
+    width: 90%;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .faq-text-container {
+    border: 1px solid;
+  }
+  
+  .desktop-woman {
+    position: relative;
+  }
+  
+  .at-box {
+    position: absolute;
+  }
+  
+}
